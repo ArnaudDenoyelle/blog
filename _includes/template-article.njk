@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} - DENODEV</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/article.css">
+  <link rel="icon" href="/assets/images/favicon.ico"/>
+</head>
+<body>
+    <nav>
+        <ul class="container">
+            <li><a href="/"><img id="logo" src="/assets/images/logo-original.svg"></a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="https://www.denodev.com" target="_blank" rel="nofollow noopener noreferrer">Resume</a></li>
+            <li id="logo-twitter"><a href="https://twitter.com/ArnaudDenoyelle" target="_blank" rel="nofollow noopener noreferrer"><img class="social-logo" src="/assets/images/twitter.svg"></a></li>
+            <li id="logo-stackoverflow"><a href="https://stackoverflow.com/users/2192903/arnaud-denoyelle" target="_blank" rel="nofollow noopener noreferrer"><img class="social-logo" src="/assets/images/stack-overflow.svg"></a></li>
+        </ul>
+    </nav>
+    <main class="container article">
+    {{ content | safe }}
+    </main>
+</body>
+</html>

@@ -1,0 +1,14 @@
+---
+layout: template-article.njk
+---
+<p>Welcome to my blog !</p>
+
+<p>There is only 1 article for now but others are in preparation :)</p>
+
+{% for post in collections.staging %}
+  <article>
+    <h1>
+      <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+    </h1>
+  </article>
+{% endfor %}
